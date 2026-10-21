@@ -16,6 +16,11 @@ The cause is in `RCTScrollViewComponentView.mm`. `_keyboardWillChangeFrame:`
 returns early when the flag is off, and `updateProps` only stores the new
 value of the flag, without applying or removing anything.
 
+## Filed as
+
+- React Native: [react/react-native#59305](https://github.com/react/react-native/issues/59305)
+- Fix: [react/react-native#59306](https://github.com/react/react-native/pull/59306) (the `fixed` branch of this repo applies the same change)
+
 ## Environment
 
 | | |
